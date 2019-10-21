@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{yeets exceptions}
   spec.description   = %q{Adds a global method `yeet` that raises an exception}
   spec.homepage      = "https://github.com/michaelirick/yeet"
+  spec.licenses      = ['MIT']
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

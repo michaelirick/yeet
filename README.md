@@ -1,5 +1,8 @@
 # Yeet
 
+[![Gem Version](https://badge.fury.io/rb/yeet.svg)](https://badge.fury.io/rb/yeet)
+![](https://img.shields.io/github/license/michaelirick/ffig.svg)
+
 ## Installation
 
 Add this line to your application's Gemfile:
