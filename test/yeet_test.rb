@@ -6,8 +6,18 @@ class YeetTest < Minitest::Test
   end
 
   def test_it_yeets
-    yeet
-  rescue
-    assert true
+    assert_raises(StandardError) { yeet }
+  end
+
+  def test_it_yeets_an_exception
+    assert_raises(Yeet::Error) { yeet Yeet::Error }
+  end
+
+  def test_it_yeets_an_exception_with_a_message
+    error = assert_raises Yeet::Error do
+      yeet Yeet::Error, 'it has been yeeted'
+    end
+
+    assert_equal error.message, 'it has been yeeted'
   end
 end

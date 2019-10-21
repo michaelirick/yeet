@@ -4,6 +4,6 @@ module Yeet
   class Error < StandardError; end
 end
 
-def yeet(*args)
-  raise *args
+module Kernel
+  alias_method :yeet, :raise
 end
